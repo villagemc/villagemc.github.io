@@ -1,0 +1,59 @@
+.body {
+    margin: 0 auto;
+}
+.header {
+    margin: 0 auto;
+    height: 100vh;
+    min-width: 420px;
+    background-image: url('../Разное/background-header.jpg');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    color: white;
+    text-align: center;
+}
+.position_color_header {
+    margin: 0 auto;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.position_header {
+    margin: 0 auto;
+    display: flex;
+    height: 85vh;
+    align-items: center;
+    justify-content: center;
+}
+.name_header {
+    margin: 0 auto;
+    padding-bottom: 2.5%;
+    font-family: 'a Anti Corona';
+}
+.description_header {
+    margin: 0 auto;
+    padding-bottom: 2.5%;
+    font-family: 'Comic Relief';
+}
+.contact_header {
+    margin: 0 auto;
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: 'Comic Relief';
+}
+.contact_header:hover {
+    text-shadow: 1px 1px 1px white;
+    box-shadow: 1px 1px 7.5px white;
+}
+.img_header {
+    height: 100%;
+}
+.img_active{
+    transition: padding-top 0.5s ease-out 0.1s;
+    cursor: pointer;
+}
+.img_active:hover {
+    padding-top: 10px;
+}
