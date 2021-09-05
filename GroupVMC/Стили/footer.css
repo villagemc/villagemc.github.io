@@ -1,0 +1,37 @@
+.footer {
+    background-image: url('../Разное/footer.png');
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+    min-width: 420px;
+}
+.head1_footer {
+    margin: 0 auto;
+    padding-top: 15px;
+    font-family: 'Comic Relief';
+    color: white;
+    text-align: center;
+}
+.flex_footer {
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+.head2_footer {
+    margin: 0 auto;
+    padding-top: 15px;
+    font-family: 'Comic Relief';
+    color: white;
+    text-align: center;
+}
+.position_img_footer {
+    margin: 0 25% 0 25%;
+    justify-content: space-between;
+    padding-bottom: 15px;
+}
+.europa {
+    cursor: pointer;
+}
+.europa:hover {
+    opacity: 0.7;
+}
