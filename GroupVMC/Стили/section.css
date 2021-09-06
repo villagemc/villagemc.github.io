@@ -1,0 +1,65 @@
+.section {
+    margin: 0 auto;
+    color: #1f1f1f;
+    text-align: center;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+}
+.flex_section {
+    display: inline-block;
+    margin: 10px;
+    vertical-align: center;
+    text-align: left !important;
+}
+.position_section {
+    margin: 0 auto;
+    display: flex;
+    height: 256.5px;
+}
+.img_section {
+    margin: 0 auto;
+    height: 250px;
+    width: 175px;
+    background-color: #1f1f1f;
+    box-shadow: 3px 3px 3px 3px #1f1f1f;
+}
+.position_img {
+    display: table-cell;
+    margin: 40px 0px 0px 0px;
+}
+.div_description_section {
+    padding-left: 15px;
+    height: 250px;
+    width: 200px;
+    font-family: 'Comic Relief';
+}
+.p-style {
+    margin: 0;
+}
+.head_section {
+    margin: 0;
+    text-shadow: 1px 1px 1px gray;
+}
+.description_section {
+    position: absolute;
+}
+.razmer_dds {
+    height: 200px;
+}
+.buy_section {
+    color: white;
+    margin-top: 6px;
+    padding: 10.5px 24.5px 10.5px 24.5px;
+    text-decoration: none;
+    background-color: #1f1f1f;
+    font-family: 'Comic Relief';
+    box-shadow: 3px 3px 3px 3px #1f1f1f;
+    position: absolute;
+}
+.buy_section:hover {
+    text-shadow: 1px 1px 1px white;
+}
+#Donate {
+    transition: all 2s ease-out 0.1s
+}
