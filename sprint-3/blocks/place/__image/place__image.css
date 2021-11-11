@@ -1,0 +1,24 @@
+.place__image {
+	grid-area: place__image;
+	width: 100%;
+	max-width: 460px;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1024px) {
+	.place__image {
+		max-width: 440px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.place__image {
+		max-width: 340px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.place__image {
+		min-width: 320px;
+	}
+}

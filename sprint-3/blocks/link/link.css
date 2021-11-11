@@ -1,0 +1,10 @@
+.link {
+	text-decoration: none;
+	font-family: 'Inter', Arial, Helvetica, sans-serif;
+	color: #fff;
+	transition: opacity 0.4s ease;
+}
+
+.link:hover {
+	opacity: 0.8;
+}
