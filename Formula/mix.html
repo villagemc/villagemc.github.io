@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рассчет привилегий</title>
+    <style type="text/css">
+        input {
+            width: 350px;
+            height: 25px;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: normal;
+            font-style: normal;
+            line-height: 1.21;
+        }
+
+        button {
+            width: 358px;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form class="form" style="display: flex; flex-direction: column;">
+        <input type="text" name="x" class="x" value='' placeholder="Введите цену покупаемой привилегии">
+        <input type="text" name="y" class="y" value='' placeholder="Введите цену действующей привилегии">
+        <input type="text" name="z" class="z" value='' placeholder="Введите процент скидки">
+        <input type="text" name="s" class="s" value='' placeholder="Введите кол-во дней для покупки">
+        <input type="text" name="f" class="f" value='' placeholder="Введите кол-во оставшихся дней">
+        <button type="button" class="button1">Рассчитать для привилегий навсегда</button>
+        <button type="button" class="button2">Рассчитать для привилегий навсегда (со скидкой)</button>
+        <button type="button" class="button3">Рассчитать для временных привилегий</button>
+        <button type="button" class="button4">Рассчитать для временных привилегий (со скидкой)</button>
+    </form>
+    <p>Итог: <span class="span">0</span></p>
+
+    <script type="text/javascript">
+        let span = document.querySelector('.span');
+        let button1 = document.querySelector('.button1');
+        let button2 = document.querySelector('.button2');
+        let button3 = document.querySelector('.button3');
+        let button4 = document.querySelector('.button4');
+        let form = document.querySelector('.form');
+
+        button1.addEventListener('click', () => {
+            let x = Number(document.querySelector('.x').value);
+            let y = Number(document.querySelector('.y').value);
+
+            let formula = x - (y * 2/3);
+            formula = Math.round(formula);
+            span.textContent = formula;
+        });
+
+        button2.addEventListener('click', () => {
+            let x = Number(document.querySelector('.x').value);
+            let y = Number(document.querySelector('.y').value);
+            let z = Number(document.querySelector('.z').value);
+
+            let skidka = z/100 * (x - (y * 2/3));
+            let formula = (x - (y * 2/3)) - skidka;
+            formula = Math.round(formula);
+            span.textContent = formula;
+        });
+
+        button3.addEventListener('click', () => {
+            let x = Number(document.querySelector('.x').value);
+            let y = Number(document.querySelector('.y').value);
+            let s = Number(document.querySelector('.s').value);
+            let f = Number(document.querySelector('.f').value);
+
+            let formula = x - (y/s * f * 2/3);
+            formula = Math.round(formula);
+            span.textContent = formula;
+        });
+
+        button4.addEventListener('click', () => {
+            let x = Number(document.querySelector('.x').value);
+            let y = Number(document.querySelector('.y').value);
+            let z = Number(document.querySelector('.z').value);
+            let s = Number(document.querySelector('.s').value);
+            let f = Number(document.querySelector('.f').value);
+
+            let skidka = z/100 * (x - (y/s * f * 2/3));
+            let formula = (x - (y/s * f * 2/3)) - skidka;
+            formula = Math.round(formula);
+            span.textContent = formula;
+        });
+    </script>
+</body>
+</html>
