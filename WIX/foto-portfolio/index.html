@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="./images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="./vendor/normalize.css">
+	<link rel="stylesheet" type="text/css" href="./vendor/fonts/inter.css">
+	<link rel="stylesheet" type="text/css" href="./pages/index.css">
+	<title>Портфолио с фото</title>
+</head>
+<body>
+	<div class="page">
+		<header class="header">
+			<a class="header__logo-link" href="#" target="_self">Roman Ahmatov</a>
+			<div class="header__content">
+				<nav class="header__menu">
+					<a class="header__link" href="#home">Главная</a>
+					<a class="header__link" href="#my">Обо мне</a>
+					<a class="header__link" href="#contact">Связаться</a>
+				</nav>
+			</div>
+		</header>
+		<main class="content">
+			<section id="home" class="images">
+				<ul class="images__list">
+					<li class="images__transform">
+						<img class="images__card" src="./images/card1.png" alt="Человек">
+					</li>
+					<li class="images__transform">
+						<img class="images__card" src="./images/card2.png" alt="Велосипед">
+					</li>
+					<li class="images__transform">
+						<img class="images__card" src="./images/card3.png" alt="Диск">
+					</li>
+					<li class="images__transform">
+						<img class="images__card" src="./images/card4.png" alt="Число 174">
+					</li>
+					<li class="images__transform">
+						<img class="images__card" src="./images/card5.png" alt="Будильник">
+					</li>
+					<li class="images__transform">
+						<img class="images__card" src="./images/card6.png" alt="Чайник">
+					</li>
+					<li class="images__transform">
+						<img class="images__card" src="./images/card7.png" alt="Машина">
+					</li>
+					<li class="images__transform">
+						<img class="images__card" src="./images/card8.png" alt="Кошка">
+					</li>
+					<li class="images__transform">
+						<img class="images__card" src="./images/card9.png" alt="Арбуз">
+					</li>
+				</ul>
+			</section>
+			<section id="my" class="info">
+				<h2 class="info__title">Обо мне</h2>
+				<div class="info__border">
+					<img class="info__image" src="./images/man.jpg" alt="Человек">
+				</div>
+				<p class="info__text">Информация о человеке, владеющим данным сайтом!</p>
+			</section>
+			<section id="contact" class="contact">
+				<h2 class="contact__title">Свяжитесь со мной!</h2>
+				<img class="contact__image" src="./images/fly.jpg" alt="Бумажный самолет">
+				<p class="contact__text">info@mysite.com | Телефон: +7 (912) 000-00-00</p>
+				<form class="contact__form">
+					<fieldset class="contact__fieldset">
+						<legend class="contact__title-form">Поля для связи</legend>
+						<input class="contact__input" placeholder="Имя" type="text">
+						<input class="contact__input" placeholder="Эл.почта" type="email" required>
+						<input class="contact__input" placeholder="Телефон" type="tel" required>
+						<textarea class="contact__input contact__input_type_text" 
+											placeholder="Добавить сообщение..." 
+											type="text"
+											required></textarea>
+					</fieldset>
+					<button class="contact__button" type="submit">Отправить</button>
+				</form>
+			</section>
+		</main>
+		<footer class="footer">
+			<p class="footer__copyright">&#169; 2022 Роман Ахматов. Сайт написан на основе WIX.com</p>
+		</footer>
+	</div>
+	<script src="./script/index.js"></script>
+</body>
+</html>
