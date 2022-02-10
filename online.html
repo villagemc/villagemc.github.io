@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Online</title>
+</head>
+<body>
+	<form style="display: flex; flex-direction: column;">
+		<textarea type="text" name="online" style="width: 400px; height: 150px; font-size: 16px;"></textarea>
+		<button type="submit" style="align-self: start;">Отправить</button>
+	</form>
+	<p>Ты гей, а онлайн: <span id='online'></span></p>
+	<script type="text/javascript">
+		const form = document.querySelector('form');
+		const textarea = form.querySelector('textarea');
+		const button = form.querySelector('button');
+		const online = document.querySelector('#online');
+
+		form.addEventListener('submit', (evt) => {
+			evt.preventDefault();
+
+			const numArea = textarea.value.split(', ');
+			online.textContent = numArea.length;
+		})
+	</script>
+</body>
+</html>
